@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/hugo-website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=hugo-website/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Getting comfortable with Machine Learning on Servers | Mohit Sharma</title>
+<meta name="keywords" content="">
+<meta name="description" content="A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at MIDAS Lab. If you were to take away only one useful tip from this article, it should be Be Polite to the people that are sharing the server.">
+<meta name="author" content="Mohit Sharma">
+<link rel="canonical" href="http://localhost:1313/hugo-website/archive/older_posts/server/">
+<link crossorigin="anonymous" href="/hugo-website/assets/css/stylesheet.977eaf2e691fe9d6783238f3ea60f3c0affcf333092baaee887438624edc50f3.css" integrity="sha256-l36vLmkf6dZ4Mjjz6mDzwK/88zMJK6ruiHQ4Yk7cUPM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/hugo-website/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/hugo-website/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/hugo-website/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/hugo-website/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/hugo-website/archive/older_posts/server/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/hugo-website/archive/older_posts/server/">
+  <meta property="og:site_name" content="Mohit Sharma">
+  <meta property="og:title" content="Getting comfortable with Machine Learning on Servers">
+  <meta property="og:description" content="A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at MIDAS Lab. If you were to take away only one useful tip from this article, it should be Be Polite to the people that are sharing the server.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="archive">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Getting comfortable with Machine Learning on Servers">
+<meta name="twitter:description" content="A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at MIDAS Lab. If you were to take away only one useful tip from this article, it should be Be Polite to the people that are sharing the server.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Some helpful Resouces",
+      "item": "http://localhost:1313/hugo-website/archive/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Getting comfortable with Machine Learning on Servers",
+      "item": "http://localhost:1313/hugo-website/archive/older_posts/server/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Getting comfortable with Machine Learning on Servers",
+  "name": "Getting comfortable with Machine Learning on Servers",
+  "description": "A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at MIDAS Lab. If you were to take away only one useful tip from this article, it should be Be Polite to the people that are sharing the server.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at MIDAS Lab. If you were to take away only one useful tip from this article, it should be Be Polite to the people that are sharing the server.\nGetting the Server access For starters, SSH is the way you connect to the servers. If you are accessing the server from outside the university network, you might need to set up a VPN connection. Forticlient on Windows/Linux and Openfortivpn on Linux lets you do that. For Linux, SSH is not a problem. However, on Windows, you can either set up WSL (Windows Subsystem Linux) or use PuTTY. Most of the labs follow a key-based SSH login. For that, you need to generate SSH keys, which can be done by ssh-keygen on Linux and using PuTTY on Windows. Getting a feel of your new workspace Servers usually run Linux. Please read about standard Linux commands like ls to list directories, cd to change directories, etc. The Missing Semester of your CS Education provides a good overview of these. Use htop to view the current CPU and RAM usage on the server. This will be very handy when you feel that the server is running ‘slow’ today and when you need to inspect your executing processes. If the server has a GPU, use nvtop to view the GPUs on the server, their VRAM status, and their current utilization. nvidia-smi is another related command that prints all the GPU information but is not real-time. To view the current storage status of different storage mounts (home, data_dump), use df -h. In case you are not sure about the mount you are working on, use pwd. If you work with videos or a large number of small files, you may run into inodes issue (file pointers exhausted). To check this, use df -i. ncdu is also a useful command to get disk sizes. Use tmux windows. This will not only allow you to run multiple scripts on the same ssh session but also it will let you keep your scripts running when you close the current ssh session. There are a lot of tmux cheatsheets available online. Keep one of them very handy initially. Learn to use rsync for copy and file transfers across servers. Another related command is scp. You can also run Jupyter kernels on the server while viewing the notebooks on your browser. You do this via SSH-Tunneling and Port Forwarding. You can also connect to your workspace using the VS Code’s SSH plugin. Running your experiments and best practices Please learn how to use Git. Please push your code to GitHub or any other preferred Version control system whenever you are done for a particular work session. It just takes two minutes. Again, The Missing Semester of your CS Education is very useful for this. For different projects, create different conda environments. This is very important since sometimes different projects have conflicting dependencies. While creating a conda environment, do it inside a tmux window since dependency installations take time. Run your model’s training using python scripts, instead of running it using Jupyter notebooks. You will save some time. You can convert notebooks to scripts using nbconvert. Fastai library has decorators for this purpose, and VSCode lets you run some parts of your scripts in notebook style behavior. If you are loading your models on notebooks for some reason, please release the GPU memory or shutdown your notebook after you are done. This is one of the most common bad practices. What happens here is since your kernel is always running, your model occupies GPU memory overnight with zero utilization. This causes a lot of problems for others who might want to run experiments after you. On a related note, please use CUDA_VISIBLE_DEVICES to assign your training processes to specific GPUs. Without this, there might be a chance that your process takes memory from multiple GPUs, where it can be run on a single GPU. Keep your CPU usage in check if you can, especially during data preprocessing. Use tasknet. Tools to make your life easier and run experiments faster In Pytorch, a better way of using multiple GPUs (if you cannot use model parallelism) is DistributedDataParallel, not DataParallel. This holds even when you want to use two GPUs on the same machine. Please use tensorboard to log your training and testing stats. Use PyMagnitude to work with embeddings. Use tqdm for progress bars. When doing so, use tqdm.auto which works well both in scripts and notebooks. If you can parallelize your jobs using either Threading or multiprocessing. Both of them are python libraries and should be used in specific use cases. If these two don’t satisfy your needs, use GNU Parallel. Have a look at awesome emergining tools like RAPIDS for GPU accelerated ML methods, Fastai-v2 and their famous DL course, Allen-NLP and Pytorch Lightning (My personal favourite). Check out Knock Knock to get notifications during your training process. Huggingface also provides a lot of pretrained models for NLP related tasks. Check out Weights and Biases for experiment management. They are very kind to provide free academic licenses. I also like Notion to maintain a research journal, draft posts for my blog, and other stuff. They are also very kind to provide free student licenses. Thanks to Karmanya and Pakhi for useful suggestions and reviews. Feel free to suggest and comment on this article using this Twitter thread or this LinkedIn post.\n",
+  "wordCount" : "968",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Mohit Sharma"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/hugo-website/archive/older_posts/server/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mohit Sharma",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/hugo-website/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/hugo-website/" accesskey="h" title="Mohit Sharma">
+                <img src="http://localhost:1313/hugo-website/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Mohit Sharma</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/hugo-website/research/" title="Research Statement">
+                    <span>Research Statement</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?hl=en&amp;user=m74gCtYAAAAJ&amp;view_op=list_works&amp;sortby=pubdate/" title="Papers">
+                    <span>Papers</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://mohitsharma17.substack.com/" title="Writing">
+                    <span>Writing</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/hugo-website/archive/" title="Resources">
+                    <span>Resources</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Getting comfortable with Machine Learning on Servers
+    </h1>
+  </header> 
+  <div class="post-content"><p>A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at <a href="http://midas.iiitd.edu.in/" target="_blank">MIDAS Lab</a>. If you were to take away only one useful tip from this article, it should be <em>Be Polite to the people that are sharing the server</em>.</p>
+<h2 id="getting-the-server-access">Getting the Server access</h2>
+<ul>
+<li>For starters, SSH is the way you connect to the servers.</li>
+<li>If you are accessing the server from outside the university network, you might need to set up a VPN connection. Forticlient on Windows/Linux and Openfortivpn on Linux lets you do that.</li>
+<li>For Linux, SSH is not a problem. However, on Windows, you can either set up WSL (Windows Subsystem Linux) or use PuTTY.</li>
+<li>Most of the labs follow a key-based SSH login. For that, you need to generate SSH keys, which can be done by <code>ssh-keygen</code> on Linux and using PuTTY on Windows.</li>
+</ul>
+<h2 id="getting-a-feel-of-your-new-workspace">Getting a feel of your new workspace</h2>
+<ul>
+<li>Servers usually run Linux. Please read about standard Linux commands like <code>ls</code> to list directories, <code>cd</code> to change directories, etc. <a href="https://missing.csail.mit.edu/" target="_blank">The Missing Semester of your CS Education</a> provides a good overview of these.</li>
+<li>Use <code>htop</code> to view the current CPU and RAM usage on the server. This will be very handy when you feel that the server is running &lsquo;slow&rsquo; today and when you need to inspect your executing processes.</li>
+<li>If the server has a GPU, use <code>nvtop</code> to view the GPUs on the server, their VRAM status, and their current utilization. <code>nvidia-smi</code> is another related command that prints all the GPU information but is not real-time.</li>
+<li>To view the current storage status of different storage mounts (home, data_dump), use <code>df -h</code>. In case you are not sure about the mount you are working on, use <code>pwd</code>.</li>
+<li>If you work with videos or a large number of small files, you may run into inodes issue (file pointers exhausted). To check this, use <code>df -i</code>.</li>
+<li><code>ncdu</code> is also a useful command to get disk sizes.</li>
+<li>Use <em>tmux</em> windows. This will not only allow you to run multiple scripts on the same ssh session but also it will let you keep your scripts running when you close the current ssh session. There are a lot of tmux cheatsheets available online. Keep one of them very handy initially.</li>
+<li>Learn to use <code>rsync</code> for copy and file transfers across servers. Another related command is <code>scp</code>.</li>
+<li>You can also run Jupyter kernels on the server while viewing the notebooks on your browser. You do this via SSH-Tunneling and Port Forwarding.</li>
+<li>You can also connect to your workspace using the VS Code&rsquo;s SSH plugin.</li>
+</ul>
+<h2 id="running-your-experiments-and-best-practices">Running your experiments and best practices</h2>
+<ul>
+<li>Please learn how to use Git. Please push your code to GitHub or any other preferred Version control system whenever you are done for a particular work session. It just takes two minutes. Again, <a href="https://missing.csail.mit.edu/" target="_blank">The Missing Semester of your CS Education</a> is very useful for this.</li>
+<li>For different projects, create different conda environments. This is very important since sometimes different projects have conflicting dependencies. While creating a conda environment, do it inside a tmux window since dependency installations take time.</li>
+<li>Run your model&rsquo;s training using python scripts, instead of running it using Jupyter notebooks. You will save some time. You can convert notebooks to scripts using <em>nbconvert</em>. Fastai library has decorators for this purpose, and VSCode lets you run some parts of your scripts in notebook style behavior.</li>
+<li>If you are loading your models on notebooks for some reason, please release the GPU memory or shutdown your notebook after you are done. This is one of the most common bad practices. What happens here is since your kernel is always running, your model occupies GPU memory overnight with zero utilization. This causes a lot of problems for others who might want to run experiments after you.</li>
+<li>On a related note, please use <code>CUDA_VISIBLE_DEVICES</code> to assign your training processes to specific GPUs. Without this, there might be a chance that your process takes memory from multiple GPUs, where it can be run on a single GPU.</li>
+<li>Keep your CPU usage in check if you can, especially during data preprocessing. Use <em>tasknet</em>.</li>
+</ul>
+<h2 id="tools-to-make-your-life-easier-and-run-experiments-faster">Tools to make your life easier and run experiments faster</h2>
+<ul>
+<li>In Pytorch, a better way of using multiple GPUs (if you cannot use model parallelism) is DistributedDataParallel, not DataParallel. This holds even when you want to use two GPUs on the same machine.</li>
+<li>Please use <em>tensorboard</em> to log your training and testing stats.</li>
+<li>Use <a href="https://github.com/plasticityai/magnitude" target="_blank">PyMagnitude</a> to work with embeddings.</li>
+<li>Use <em>tqdm</em> for progress bars. When doing so, use <code>tqdm.auto</code> which works well both in scripts and notebooks.</li>
+<li>If you can parallelize your jobs using either <em>Threading</em> or <em>multiprocessing</em>. Both of them are python libraries and should be used in specific use cases. If these two don&rsquo;t satisfy your needs, use <em>GNU Parallel</em>.</li>
+<li>Have a look at awesome emergining tools like <a href="https://rapids.ai/" target="_blank">RAPIDS</a> for GPU accelerated ML methods, <a href="https://docs.fast.ai/" target="_blank">Fastai-v2</a> and their famous <a href="https://course.fast.ai/" target="_blank">DL course</a>, <a href="https://github.com/allenai/allennlp" target="_blank">Allen-NLP</a> and <a href="https://github.com/PyTorchLightning/pytorch-lightning" target="_blank">Pytorch Lightning</a> (My personal favourite).</li>
+<li>Check out <a href="https://github.com/huggingface/knockknock" target="_blank">Knock Knock</a> to get notifications during your training process. Huggingface also provides a lot of pretrained models for NLP related tasks.</li>
+<li>Check out <a href="https://www.wandb.com/" target="_blank">Weights and Biases</a> for experiment management. They are very kind to provide free academic licenses.</li>
+<li>I also like <a href="https://www.notion.so/" target="_blank">Notion</a> to maintain a research journal, draft posts for my blog, and other stuff. They are also very kind to provide free student licenses.</li>
+</ul>
+<p>Thanks to <a href="https://twitter.com/karmanya" target="_blank">Karmanya</a> and <a href="https://www.linkedin.com/in/pakhi-bamdev/" target="_blank">Pakhi</a> for useful suggestions and reviews.
+Feel free to suggest and comment on this article using this <a href="https://twitter.com/mohitsharmaj29/status/1304737056787181568?s=20" target="_blank">Twitter thread</a> or this <a href="https://www.linkedin.com/posts/mohitsh29_getting-comfortable-with-machine-learning-activity-6710502787530194944-9Vt5" target="_blank">LinkedIn post</a>.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 Mohit Sharma</span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">hugo</a>, <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">papermod</a>, &amp;
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">hugo-website</a>.
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

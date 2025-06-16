@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Review on Mohit Sharma</title>
+    <link>http://localhost:1313/hugo-website/tags/review/</link>
+    <description>Recent content in Review on Mohit Sharma</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/hugo-website/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Semester of Ph.D. in Review and some Reflections</title>
+      <link>http://localhost:1313/hugo-website/archive/first-semester/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-website/archive/first-semester/</guid>
+      <description>&lt;p&gt;![Research Block]({{ site.url }}/images/researchBlock.jpg)
+&lt;em&gt;Research Block at IIIT Delhi, taken from &lt;a href=&#34;https://iiitd.ac.in/gallery/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have recently finished the grading work of my first course as a TA, and done with all my coursework. So, I find this as an excellent opportunity to write my first blog post. The end of the semester has always been about reflecting on how I could have made it a better experience. This time it&amp;rsquo;s a bit different because I am now a Ph.D. scholar with a subconscious worry about my work and Covid-19 lockdown.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

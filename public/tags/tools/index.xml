@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tools on Mohit Sharma</title>
+    <link>http://localhost:1313/hugo-website/tags/tools/</link>
+    <description>Recent content in Tools on Mohit Sharma</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/hugo-website/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting comfortable with Machine Learning on Servers</title>
+      <link>http://localhost:1313/hugo-website/archive/server/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hugo-website/archive/server/</guid>
+      <description>&lt;p&gt;A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at &lt;a href=&#34;http://midas.iiitd.edu.in/&#34; target=&#34;_blank&#34;&gt;MIDAS Lab&lt;/a&gt;. If you were to take away only one useful tip from this article, it should be &lt;em&gt;Be Polite to the people that are sharing the server&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Some helpful Resouces on Mohit Sharma</title>
+    <link>http://localhost:1313/archive/</link>
+    <description>Recent content in Some helpful Resouces on Mohit Sharma</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/archive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Semester of Ph.D. in Review and some Reflections</title>
+      <link>http://localhost:1313/archive/first-semester/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archive/first-semester/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Research Block&#34; loading=&#34;lazy&#34; src=&#34;https://iiitd.ac.in/gallery/assets/img/Institute/institute18-4.jpg&#34;&gt;
+&lt;em&gt;Research Block at IIIT Delhi, taken from &lt;a href=&#34;https://iiitd.ac.in/gallery/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have recently finished the grading work of my first course as a TA, and done with all my coursework. So, I find this as an excellent opportunity to write my first blog post. The end of the semester has always been about reflecting on how I could have made it a better experience. This time it&amp;rsquo;s a bit different because I am now a Ph.D. scholar with a subconscious worry about my work and Covid-19 lockdown.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting comfortable with Machine Learning on Servers</title>
+      <link>http://localhost:1313/archive/server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archive/server/</guid>
+      <description>&lt;p&gt;A lot of new members often ask around everyone about how to work with servers. I thought it would be nice if I can put everything in one place. This post will be about a list of things you need to know, and then you can google for any expanded tutorial for it. I will write based on what I have experienced and what we face daily at &lt;a href=&#34;http://midas.iiitd.edu.in/&#34; target=&#34;_blank&#34;&gt;MIDAS Lab&lt;/a&gt;. If you were to take away only one useful tip from this article, it should be &lt;em&gt;Be Polite to the people that are sharing the server&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
