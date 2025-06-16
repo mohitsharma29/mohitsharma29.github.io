@@ -1,0 +1,131 @@
+baseURL: "https://mohitsharma29.github.io/" 
+title: Mohit Sharma
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Writing
+          url: https://mohitsharma17.substack.com/
+          weight: 4 
+        - name: Papers
+          url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
+          weight: 3
+        - name: Research Statement
+          url: research/
+          weight: 2
+        - name: Resources
+          url: archive/
+          weight: 5
+        # - name: Data
+        #  url: data/
+        #  weight: 4 
+        # - name: Writing
+        #  url: https://mohitsharma17.substack.com/
+        #  weight: 6
+
+params:
+    description: "This website hosts Mohit Sharma's research papers, books, course materials, data, curriculum vitae, and contact information."
+    author: Mohit Sharma
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["books","courses","papers","data"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Mohit Sharma
+          subtitle: "I am a Student Trainee (Research Intern) at RIKEN-AIP with Prof. Masashi Sugiyama, and a Ph.D. candidate at IIIT Delhi, working with Rajiv Ratn and Amit Deshpande (MSR India). I mostly work on learning with imperfect data distributions and care a lot about optimal classification. </br> <em>I am looking for internship opportunities in early 2026 and will be on the job market around that time.</em>"
+          imageUrl: "img_black_white.jpg"
+          imageWidth: 160
+          imageHeight: 160
+          buttons:
+            - name: Research Statement
+              url: research/
+            #- name: Informal CV
+            #  url: research/
+            - name: Papers
+              url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
+            #- name: Data
+            #  url: data/
+            - name: Writing
+              url: https://mohitsharma17.substack.com/
+            #- name: Tags
+            #  url: tags/
+            - name: Resources
+              url: archive/
+            #- name: Blog
+            #  url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+
+    socialIcons:
+        - name: CV
+          url: https://drive.google.com/file/d/1zZCjLVDKxnmRIYgpVPHm2VwzrIjjT0Fe/view?usp=sharing/
+        - name: Email
+          url: mailto:mohits@iiitd.ac.in
+        #- name: Zoom
+        #  url: https://www.zoom.us/my/igelfeld
+        #- name: Location
+        #  url: location/
+        #- name: Office Hours
+        #  url: officehours/
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
+        - name: GitHub
+          url: https://github.com/mohitsharma29
+        - name: Substack
+          url: https://mohitsharma17.substack.com/
+        #- name: YouTube
+        #  url: https://www.youtube.com/@pmichaillat
+        - name: Twitter
+          url: https://x.com/mohitsharmaj29
+        #- name: Bluesky
+        #  url: https://bsky.app/profile/pmichaillat.bsky.social
+        - name: Instagram
+          url: https://www.instagram.com/mohit.sharma_29/
+        - name: Goodreads
+          url: https://www.goodreads.com/user/show/58133793-mohit-sharma
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Mohit Sharma"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
