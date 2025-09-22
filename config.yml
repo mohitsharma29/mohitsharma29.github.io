@@ -12,13 +12,13 @@ taxonomies:
 
 menu:
     main:
-        - name: Writing
-          url: https://mohitsharma17.substack.com/
+        - name: Substack
+          url: hhttps://mohitsharma17.substack.com/profile/posts
           weight: 4 
         - name: Papers
           url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
           weight: 3
-        - name: Research Statement
+        - name: Research Interests
           url: research/
           weight: 2
         - name: Resources
@@ -58,12 +58,21 @@ params:
     profileMode:
           enabled: true
           title: Mohit Sharma
-          subtitle: "I am a Research Intern at RIKEN-AIP with Prof. Masashi Sugiyama, and a Ph.D. candidate at IIIT Delhi, working with Rajiv Ratn and Amit Deshpande (MSR India). I work on learning with imperfect data distributions and care a lot about optimal classification. </br> <em>I am looking for internship opportunities in early 2026 and will be on the job market around that time.</em>"
+          subtitle: "I am a Research Intern at RIKEN-AIP with Prof. Masashi Sugiyama, and a Ph.D. candidate at IIIT Delhi, working with Rajiv Ratn and Amit Deshpande (MSR India). I work on learning with imperfect data distributions and care a lot about optimal classification. </br> <em>I am looking for internship opportunities in early 2026 and will be on the job market around that time.</em>
+          
+          </br></br>
+
+          ### <u>Latest News</u></br></br>
+          
+          - **September 2025**: Our paper <i>On Optimal Steering for Exact Fairness</i> ([arXiv](https://arxiv.org/abs/2509.15759), [Blog](https://open.substack.com/pub/mohitsharma17/p/seeking-ideal-data-distributions?r=1tjy9l&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true))  has been accepted to <b>Neurips 2025</b>.</br>
+
+          - **April 2025**: Started working as a Research Intern at RIKEN-AIP with Prof. Masashi Sugiyama.
+          "
           imageUrl: "img_black_white.jpg"
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Research Statement
+            - name: Research Interests
               url: research/
             #- name: Informal CV
             #  url: research/
@@ -71,8 +80,8 @@ params:
               url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
             #- name: Data
             #  url: data/
-            - name: Writing
-              url: https://mohitsharma17.substack.com/
+            - name: Substack
+              url: https://mohitsharma17.substack.com/profile/posts
             #- name: Tags
             #  url: tags/
             - name: Resources
@@ -95,16 +104,16 @@ params:
           url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
         - name: GitHub
           url: https://github.com/mohitsharma29
-        - name: Substack
-          url: https://mohitsharma17.substack.com/
+        # - name: Substack
+        #  url: https://mohitsharma17.substack.com/
         #- name: YouTube
         #  url: https://www.youtube.com/@pmichaillat
         - name: Twitter
           url: https://x.com/mohitsharmaj29
         #- name: Bluesky
         #  url: https://bsky.app/profile/pmichaillat.bsky.social
-        - name: Instagram
-          url: https://www.instagram.com/mohit.sharma_29/
+        #- name: Instagram
+        #  url: https://www.instagram.com/mohit.sharma_29/
         - name: Goodreads
           url: https://www.goodreads.com/user/show/58133793-mohit-sharma
 

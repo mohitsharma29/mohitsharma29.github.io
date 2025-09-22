@@ -99,8 +99,8 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/research/" title="Research Statement">
-                    <span class="active">Research Statement</span>
+                <a href="http://localhost:1313/research/" title="Research Interests">
+                    <span class="active">Research Interests</span>
                 </a>
             </li>
             <li>
@@ -115,8 +115,8 @@
                 </a>
             </li>
             <li>
-                <a href="https://mohitsharma17.substack.com/" title="Writing">
-                    <span>Writing</span>&nbsp;
+                <a href="#ZgotmplZ" title="Substack">
+                    <span>Substack</span>&nbsp;
                     <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
@@ -139,15 +139,21 @@
   <h1>
   </h1>
 </header>
-<div class="post-content"><img src="research_statement_cover.png" width="600" height="350" alt="Generated using ChatGPT: Generate an image of a Phd student trying to work on machine learning theory and also trying to work on empirical machine learning, while appearing totally overwhelmed." style="display: block; margin: 0 auto">
+<div class="post-content"><!-- <img src="research_statement_cover.png" width="600" height="350" alt="Generated using ChatGPT: Generate an image of a Phd student trying to work on machine learning theory and also trying to work on empirical machine learning, while appearing totally overwhelmed." style="display: block; margin: 0 auto">
 <!-- ![Generated using ChatGPT: Generate an image of a Phd student trying to work on machine learning theory and also trying to work on empirical machine learning, while appearing totally overwhelmed.](research_statement_cover.png) -->
-<br>
-<br>
 <p text-align='justify'>
+<u><i> Past Experience</i></u>
 <p>My training so far has been around imperfect data. My PhD started with trying to understand how pretraining helps model performance downstream, even if the pretraining is done on extremely noisy, sparse labels (<a href="https://arxiv.org/pdf/2110.06827" target="_blank">arXiv</a>). This was when Self-Supervised Learning methods started becoming mainstream and showed immense promise.</p>
-<p>Towards the end of that project, I felt the need to get into more mathematics of ML. At the same time, we were short on computing resources, and working more on pretraining always felt like a waiting game. Hence, around this time, I decided to look into Fairness in Machine Learning. At that time and even now, Fair ML offers a plethora of open problems with significant implications for Machine Learning. Our previously published <a href="https://proceedings.mlr.press/v235/sharma24a.html" target="_blank">paper</a> tackles exactly this: when is it true that imposing fairness on your model amounts to obtaining the most accurate classifier, especially when the data is imperfect. Around this time, I started to get interested in <a href="https://en.wikipedia.org/wiki/Bayes_classifier" target="_blank">Bayes optimality</a> (the best model for a given data distribution).</p>
-<p>In the real world, our data will never be free of noise and spurious correlations of the past. Hence, there needs to be some assurance and guarantee that the models we train on such noisy and biased data will get the job done and comply with safety and regulatory guidelines. Therefore, my research currently studies many such scenarios from the perspective of what&rsquo;s theoretically possible (Bayes Optimality). I am also working on generaling to other imperfect data settings, especially those requiring cost-sensitive learning where your errors can have unequal weights. Fairness in ML is just one example of <a href="https://proceedings.mlr.press/v81/menon18a.html" target="_blank">this</a>, where the weights should be different between data groups to satisfy a given fairness constraint.</p>
-<p>On a more philosophical level, my long-term aim is to connect theory and practice. Machine learning has had incredible empirical success while posing some of the most complex theory questions one can encounter. I like to believe in the hypothesis that theory and practice can help each other (especially in the current climate where the consensus is to ignore theory completely) and that Machine Learning can benefit greatly from rigorous analysis, even in the age of LLMs. However, at the same time, there seems to be a disconnect between what the theory community tackles and what the empirical community wants and works on. This gap has only massively increased recently with the advent of pretrained, massive models. Therefore, I want to operate at a junction between these two communities. If nothing, the theory community can almost surely help everyone come up with reasonable and well-justified heuristics and guidelines to train and use Machine learning models.</p>
+<p>Towards the end of that project, I decided to transition to more theoretical topics. Hence, around this time, I decided to look into Fairness in Machine Learning. At that time and even now, Fair ML offers a plethora of open problems with significant implications for Machine Learning. Our previously published <a href="https://proceedings.mlr.press/v235/sharma24a.html" target="_blank">paper</a> at ICML 2024 tackles exactly this: when is it true that imposing fairness on your model amounts to obtaining the most accurate classifier, especially when the data is imperfect. The tools used in our paper can be leveraged to work for many cost-sensitive applications and label bias models. Around this time, I started to get interested in <a href="https://en.wikipedia.org/wiki/Bayes_classifier" target="_blank">Bayes optimality</a> (the best model for a given data distribution).</p>
+<p>In the real world, our data will never be free of noise and spurious correlations of the past. Hence, there needs to be some assurance and guarantee that the models we train on such noisy and biased data will get the job done and comply with safety and regulatory guidelines. Therefore, my research currently studies many such scenarios from the perspective of what&rsquo;s theoretically possible (Bayes Optimality). I am also working on generalizing to other imperfect data settings, especially those requiring cost-sensitive learning, where your errors can have unequal weights. Fairness in ML is just one example of <a href="https://proceedings.mlr.press/v81/menon18a.html" target="_blank">this</a>, where the weights should differ between data groups to satisfy a given fairness constraint.</p>
+<p>Building on our previous <a href="%28https://proceedings.mlr.press/v235/sharma24a.html%29">work</a>, we recently also studied whether we can steer a given data distribution towards an &lsquo;ideal&rsquo; distribution, where there are no trade-offs between fairness and accuracy. To that end, in our recent work (<a href="https://arxiv.org/abs/2509.15759" target="_blank">arXiv</a>, <a href="https://open.substack.com/pub/mohitsharma17/p/seeking-ideal-data-distributions?r=1tjy9l&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true" target="_blank">blog</a>), which has been accepted for presentation and publication at Neurips 2025, we were able to study such conditions assuming a parametric distribution over our data. However, we also noticed that the most general steering condition will result in Non-Convex optimization programs. Therefore, we propose following an Affirmative Action for the underprivileged group to make the optimization tractable. Since there is some evidence that the internal representation of large models behaves according to some Gaussian, as a proof of concept, we were able to leverage our results to steer LLMs away from toxic generation and reduce bias in Multi-class classification over embeddings extracted from LLMs. We also hope that some of these ideas can be used for principled training of <i>Fair</i> Generative models.</p>
+<p><u><i>Current Projects</i></u></p>
+<p>Currently, I am on track to submit my thesis early next year. My last few projects involve exploring Bayes Error Estimation from soft labels (extension of ideas from <a href="https://openreview.net/forum?id=FZdJQgy05rz" target="_blank">Ishida et al.</a>) and exploring the role of randomization in optimal fair classification (extension of ideas from <a href="https://arxiv.org/pdf/2406.03142" target="_blank">Agarwal et al.</a>).</p>
+<!-- 
+On a more philosophical level, my long-term aim is to connect theory and practice. Machine learning has had incredible empirical success while posing some of the most complex theory questions one can encounter. I like to believe in the hypothesis that theory and practice can help each other (especially in the current climate where the consensus is to ignore theory completely) and that Machine Learning can benefit greatly from rigorous analysis, even in the age of LLMs. However, at the same time, there seems to be a disconnect between what the theory community tackles and what the empirical community wants and works on. This gap has only massively increased recently with the advent of pretrained, massive models. Therefore, I want to operate at a junction between these two communities. If nothing, the theory community can almost surely help everyone come up with reasonable and well-justified heuristics and guidelines to train and use Machine learning models. -->
+<!-- <u><i>Research Interests</i></u>
+
+Over the course of my PhD, I have been fascinated by how rigourous statistics can help Machine Learning. If I could go back, I would anyday study and specialize in statistics. Going forward,  -->
 </p>
 </div>
     </main>
