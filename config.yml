@@ -12,18 +12,24 @@ taxonomies:
 
 menu:
     main:
-        - name: Substack
-          url: hhttps://mohitsharma17.substack.com/profile/posts
-          weight: 4 
+        # - name: Substack
+        #   url: https://mohitsharma17.substack.com/profile/posts
+        #   weight: 4 
         - name: Papers
-          url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
+          url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate
           weight: 3
-        - name: Research Interests
+        - name: Research
           url: research/
           weight: 2
         - name: Resources
           url: archive/
+          weight: 4
+        - name: Blog
+          url: blog/
           weight: 5
+        - name: Principles
+          url: principles/
+          weight: 6
         # - name: Data
         #  url: data/
         #  weight: 4 
@@ -64,7 +70,7 @@ params:
 
           ### <u>Latest News</u></br></br>
           
-          - **September 2025**: Our paper <i>On Optimal Steering for Exact Fairness</i> ([arXiv](https://arxiv.org/abs/2509.15759), [Blog](https://open.substack.com/pub/mohitsharma17/p/seeking-ideal-data-distributions?r=1tjy9l&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true))  has been accepted to <b>Neurips 2025</b>.</br>
+          - **September 2025**: Our paper <i>On Optimal Steering to Achieve Exact Fairness</i> ([arXiv](https://arxiv.org/abs/2509.15759), [Blog](https://open.substack.com/pub/mohitsharma17/p/seeking-ideal-data-distributions?r=1tjy9l&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true))  has been accepted to <b>Neurips 2025</b>.</br>
 
           - **April 2025**: Started working as a Research Intern at RIKEN-AIP with Prof. Masashi Sugiyama.
           "
@@ -72,22 +78,24 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Research Interests
+            - name: Research
               url: research/
             #- name: Informal CV
             #  url: research/
             - name: Papers
-              url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
+              url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate
             #- name: Data
             #  url: data/
-            - name: Substack
-              url: https://mohitsharma17.substack.com/profile/posts
+            # - name: Substack
+            #   url: https://mohitsharma17.substack.com/profile/posts
             #- name: Tags
             #  url: tags/
             - name: Resources
               url: archive/
-            #- name: Blog
-            #  url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+            - name: Blog
+              url: blog/
+            - name: Principles
+              url: principles/
 
     socialIcons:
         - name: CV
@@ -101,11 +109,11 @@ params:
         #- name: Office Hours
         #  url: officehours/
         - name: Google Scholar
-          url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate/
+          url: https://scholar.google.com/citations?hl=en&user=m74gCtYAAAAJ&view_op=list_works&sortby=pubdate
         - name: GitHub
           url: https://github.com/mohitsharma29
-        # - name: Substack
-        #  url: https://mohitsharma17.substack.com/
+        - name: Substack
+          url: https://mohitsharma17.substack.com/profile/posts
         #- name: YouTube
         #  url: https://www.youtube.com/@pmichaillat
         - name: Twitter
