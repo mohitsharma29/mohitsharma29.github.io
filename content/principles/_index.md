@@ -30,6 +30,7 @@ Inspired by very sane and level-headed advice from multiple sources ([julian.ac]
 - [Manuel Blum's 4Rs of Graduate School](https://www.cs.cmu.edu/~mblum/research/pdf/grad.html)
 - [How To Understand Things by Nabeel S. Qureshi](https://nabeelqu.co/understanding)
 - [All articles in the Raw Nerve series by Aaron Swartz](http://www.aaronsw.com/weblog/rawnerve) and a highly recommended [documentary](https://www.youtube.com/watch?v=9vz06QO3UkQ) on him.
+ - [choose the life you already have](https://nataliedocherty.substack.com/p/choose-the-life-you-already-have)
 
 ### Great Lectures
 

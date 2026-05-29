@@ -4,7 +4,7 @@ hidemeta: true
 date: 2003-03-10
 ---
 
-Dostoevsky was not wrong to formalize such a powerful notion. The world is a museum of passion projects, and such beautiful projects and people have saved the world and will continue to save it. To that end, this is a live blog of any media that continues to inspire me.
+Dostoevsky did a great service by formalizing such a powerful notion. The world is a museum of passion projects, and such beautiful projects and people have saved the world and will continue to save it. To that end, this is a live blog of any media that continues to inspire me.
 
 <!-- ![empitness_machine_live](../images/emily_entrance.png)
 *Emily's Entrance in one of the live versions of LP's new hit: [The Emptiness Machine](https://www.youtube.com/watch?v=7F5MKaJMxDc). This was the first time in a decade I binged-listened to LP again, and I'm so happy they truly found a successor.* -->
