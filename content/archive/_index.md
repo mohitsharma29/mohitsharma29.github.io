@@ -1,5 +1,5 @@
 ---
-title: "Some helpful Resouces"
+title: "Some helpful Resources"
 hidemeta: true
 ---
 
@@ -7,3 +7,4 @@ hidemeta: true
 * Excellent notes on [Non-linear Optimization](https://www.mit.edu/~gfarina/notes/).
 * Excellent Books and Surveys: [Fairness in Machine Learning](https://fairmlbook.org/), [Performative Prediction](https://arxiv.org/pdf/2310.16608).
 * A useful resource sheet for foundations of Statistics ([github](https://github.com/dobriban/stat-ml-edu)).
+* Philosophy finally accessible. ([web](https://ergo.org/new-to-philosophy)).

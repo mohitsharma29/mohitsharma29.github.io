@@ -11,3 +11,6 @@ Dostoevsky did a great service by formalizing such a powerful notion. The world 
 
 ![two_personalities](https://i.guim.co.uk/img/media/31a6dc22118c1e2aa97f62dd32415f644c8586c7/0_236_2400_1440/master/2400.jpg?width=1020&dpr=1&s=none&crop=none)
 *Ghost Whisperer by Eva Charkiewicz, taken from [here](https://www.theguardian.com/healthcare-network/gallery/2018/jan/17/eight-artworks-inspired-mental-health-problems-pictures#img-8). Somehow this picture always intrigued me in ways I cannot describe. You can interpret this however you like, but I am mostly reminded of one's overthing self.*
+
+![hopper_diner](https://www.edwardhopper.net/assets/img/paintings/nighthawks.jpg)
+*Nighthawks by Edward Hopper, taken from [here](https://www.edwardhopper.net/nighthawks.jsp). Depicts the fine line between solitude and loneliness perfectly for me.*
