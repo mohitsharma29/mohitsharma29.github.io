@@ -66,11 +66,13 @@ params:
     profileMode:
           enabled: true
           title: Mohit Sharma
-          subtitle: "I am an incoming Postdoc at the Institute of Statistical Mathematics, Tokyo and Tohoku University, hosted by [Prof. Han Bao](https://hermite.jp/). My research interests include ML theory, responsible AI and more recently, problems at the intersection of Economics and ML. 
+          subtitle: "I am a Postdoc at the Institute of Statistical Mathematics, Tokyo and Tohoku University, hosted by [Prof. Han Bao](https://hermite.jp/). My research interests include ML theory, responsible AI and more recently, problems at the intersection of Economics and ML. 
           
           </br>
 
-          ### <u>Latest News</u></br></br>
+          <!--### <u>Latest News</u></br></br>-->
+
+          - **September 2026**: Two papers accepted at <b>Neurips 2026</b>, titled <i>Practical Estimation of the Bayes Optimal Fairness-Accuracy Tradeoff with Soft Labels</i> and <i>Cost Efficient Fairness Audit Under Partial Feedback</i>, more details soon!
 
           - **August 2026**: Defended my PhD thesis titled <i>On Optimal Steering to Achieve Exact Fairness</i> at IIIT Delhi.</br>
 
@@ -78,7 +80,7 @@ params:
 
           - **January 2026**: Starting as a Machine Learning Intern at <b>Tower Research Capital</b>.</br>
           
-          - **September 2025**: Our paper <i>On Optimal Steering to Achieve Exact Fairness</i> ([arXiv](https://arxiv.org/abs/2509.15759), [Blog](https://open.substack.com/pub/mohitsharma17/p/seeking-ideal-data-distributions?r=1tjy9l&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true))  has been accepted to <b>Neurips 2025</b>.</br>
+          <!-- - **September 2025**: Our paper <i>On Optimal Steering to Achieve Exact Fairness</i> ([arXiv](https://arxiv.org/abs/2509.15759), [Blog](https://open.substack.com/pub/mohitsharma17/p/seeking-ideal-data-distributions?r=1tjy9l&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true))  has been accepted to <b>Neurips 2025</b>.</br> -->
 
           <!-- - **April 2025**: Started working as a Research Intern at <b>RIKEN-AIP</b> with Prof. Masashi Sugiyama. -->
           "
